@@ -158,11 +158,11 @@ AddEventHandler('changeCarColor', function(col1, col2)
 end)
 
 AddEventHandler('setWeather', function(weatherid)
-ForceWeatherNow(weatherid)
+ForceWeatherNow(tonumber(weatherid))
 end)
 
 AddEventHandler('setTime', function(hour)
-SetTimeOfDay(hour)
+SetTimeOfDay(tonumber(hour))
 end)
 
 AddEventHandler('setPos', function(x, y, z)
